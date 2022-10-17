@@ -1,0 +1,130 @@
+@use "../abstracts/variables" as *;
+
+@media screen and (max-width: $tabletWidth) {
+  .header-wrapper {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: column;
+    display: none;
+  }
+  .navbar-icons {
+    display: none;
+    margin-top: 40px;
+  }
+  .navbar-icons i {
+    font-size: 20px;
+  }
+  .header-dropdownNavigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .reviews {
+    &-card {
+      min-width: 330px;
+     
+      &-text {
+        font-size: 14px;
+      }
+      &-image {
+        max-width: 70px;
+        max-height: 70px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobileWidth) {
+  @each $suffix, $size in $mobileTextSizes {
+    .text-#{$suffix} {
+      font-size: $size;
+    }
+  }
+  @each $suffix, $padding in $buttonsMobile {
+    .btn-#{$suffix} {
+      padding: $padding;
+    }
+  }
+  .banner {
+    &-form {
+      input {
+        margin-left: 0;
+        max-width: 250px;
+        width: 100%;
+        height: 50px;
+        padding-right: 50px;
+      }
+      input::placeholder {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .properties,
+  .sales {
+    text-align: center;
+
+    &-cards {
+      justify-content: center;
+    }
+    &-card {
+      &-description {
+        padding: 10px 10px 15px 15px;
+      }
+      &-image{
+        max-width:300px
+      }
+      &-text {
+        gap: 25px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .sales {
+    text-align: left;
+    &-card {
+      &-footer {
+        padding: 20px 20px;
+        margin-top: 10px;
+      }
+      &-user {
+        gap: 10px;
+
+        &-image {
+          width: 40px;
+          height: 45px;
+        }
+      }
+    }
+  }
+
+  .contact {
+    justify-content: center;
+
+    &-card {
+      padding: 30px 25px 45px 20px;
+    }
+  }
+
+  .reviews {
+    &-card {
+      min-width: 280px;
+      padding: 30px 20px;
+      transition: all 0.2s linear;
+
+      &-text {
+        font-size: 14px;
+      }
+      &-image {
+        max-width: 70px;
+        max-height: 70px;
+      }
+    }
+  }
+}

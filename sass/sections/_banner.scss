@@ -1,0 +1,43 @@
+.banner {
+  background-image: url("https://dl.dropboxusercontent.com/s/7ndsznp14kur1lp/background.png?dl=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  display: flex;
+  align-items: center;
+
+  &-text {
+    margin-top: 10px;
+  }
+  &-form {
+    margin-top: 40px;
+    display: flex;
+
+    select {
+      width: 150px;
+      height: 50px;
+      padding: 8px 14px;
+      border-radius: 10px 0 0 10px;
+      border: none;
+      outline: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    input {
+      margin-left: 0;
+      width: 480px;
+      height: 50px;
+      padding: 8px 8px 8px 60px;
+      border-radius: 0 10px 10px 0;
+      border: none;
+      outline: none;
+    }
+    .input-group {
+      position: relative;
+    }
+    .search-icon {
+      position: absolute;
+      left: 30px;
+      top: 18px;
+    }
+  }
+}

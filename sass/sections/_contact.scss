@@ -1,0 +1,22 @@
+.contact{
+    margin-top: 100px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+
+    &-card{
+        padding:45px 0 60px 50px;
+        max-width: 510px;
+
+        &-heading,&-text{
+            margin-top:20px;
+        }
+        &-text{
+            max-width: 330px;
+        }
+        &-btn{
+            margin-top:30px;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+
+@each $suffix,$padding in $buttons{
+    .btn-#{$suffix}{
+        padding:$padding;
+    }
+}

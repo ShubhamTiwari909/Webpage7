@@ -1,0 +1,40 @@
+.properties,.sales{
+    margin-top:100px;
+    
+    &-cards{
+        margin-top:30px;
+        display:flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    &-card{
+        border: solid 1px #f0f0f1;
+        max-width: 350px;
+        border-radius:5px;
+
+        &-description{
+            padding: 20px 20px 25px 25px;
+            &:hover{
+                background-color: rgba(0,0,0,0.8);
+                color: #fff;
+            }
+        }
+        &-text{
+            margin-top: 8px;
+            display:flex;
+            gap: 15px;
+            
+        }
+        &-image{
+            max-width: 350px;
+            max-height: 250px;
+            height: 250px;
+            border-radius:5px 5px 0 0;
+        }
+        &-icon{
+            width: 20px;
+            height: 16px;
+        }
+    }
+}

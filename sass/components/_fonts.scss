@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+
+@each $suffix,$size in $textSizes{
+    .text-#{$suffix}{
+        font-size: $size;
+    }
+}
+
+@each $fontWeight in $fontWeights{
+    .font-w-#{$fontWeight}{
+        font-weight: $fontWeight;
+    }
+}
+
+.text-center{
+    text-align: center;
+}

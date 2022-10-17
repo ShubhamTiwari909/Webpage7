@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as *;
+.sales {
+  margin-top: 100px;
+  background-image: url("../salesBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  align-items: center;
+
+  &-badge {
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  &-card {
+    max-width: 550px;
+
+    @each $index, $marginTop in $marginTopForSale {
+      &-text:nth-last-child(#{$index}) {
+        margin-top: $marginTop;
+      }
+    }
+    
+    &-text {
+      gap: 30px;
+    }
+    &-icon {
+      margin-right: 10px;
+    }
+
+    &-description:hover {
+      background-color: white;
+      outline: none;
+      border: none;
+      color: #454545;
+    }
+
+    &-footer {
+      max-width: 550px;
+      padding:20px 50px;
+      margin-top:10px;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-user{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      &-image {
+        width: 50px;
+        height: 60px;
+        border-radius: 20px;
+      }
+    }
+  }
+}

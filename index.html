@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage7</title>
+    <link rel="stylesheet" href="./sass/index.css" />
+    <script
+      src="https://kit.fontawesome.com/ffbd6d2f88.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body" onload="defaultStyling()">
+    <header class="header" id="header">
+      <div class="container-md header-wrapper">
+        <div class="header-dropdownNavigation" id="dropdownNavigation">
+          <img src="https://dl.dropboxusercontent.com/s/wo8c597x590k852/logo.png?dl=0" class="logo" id="logo" />
+          <button class="hamburger" id="hamburger" onclick="dropdownNavigation()">
+            <i class="fa-sharp fa-solid fa-bars text-white" id="hamburger-icon"></i>
+          </button>
+        </div>
+        <nav class="navbar-container">
+          <ul class="navbar" id="navbar">
+            <li class="navbar-item text-center">
+              <a
+                href="javascript:void(0)"
+                class="navbar-link text-white text-x-small"
+                id="navbar-link"
+                 onclick="dropdownNavigation()"
+                >Homepage</a
+              >
+            </li>
+            <li class="navbar-item text-center">
+              <a
+                href="javascript:void(0)"
+                class="navbar-link text-white text-x-small"
+                id="navbar-link"
+                 onclick="dropdownNavigation()"
+                >About Us</a
+              >
+            </li>
+            <li class="navbar-item text-center">
+              <a
+                href="javascript:void(0)"
+                class="navbar-link text-white text-x-small"
+                id="navbar-link"
+                 onclick="dropdownNavigation()"
+                >For Rent</a
+              >
+            </li>
+            <li class="navbar-item text-center">
+              <a
+                href="javascript:void(0)"
+                class="navbar-link text-white text-x-small"
+                id="navbar-link"
+                 onclick="dropdownNavigation()"
+                >For Sale</a
+              >
+            </li>
+            <li class="navbar-item text-center">
+              <a
+                href="javascript:void(0)"
+                class="navbar-link text-white text-x-small"
+                id="navbar-link"
+                 onclick="dropdownNavigation()"
+                >Our Agents</a
+              >
+            </li>
+            <li class="navbar-item text-center">
+              <a
+                href="javascript:void(0)"
+                class="navbar-link text-white text-x-small"
+                id="navbar-link"
+                 onclick="dropdownNavigation()"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="navbar-icons" id="navbar-icons">
+          <i
+            class="fa-solid fa-arrow-right-arrow-left text-white text-x-small"
+          ></i>
+          <i class="fa-regular fa-heart text-white text-x-small"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="banner-wrapper container-md">
+          <h1 class="text-2x-large text-white font-w-bold">
+            Let us Guide You Home
+          </h1>
+          <p class="text-md text-white font-w-bold banner-text">
+            Find the house of your dreams.
+          </p>
+          <form class="banner-form">
+            <select>
+              <option value="For Rent">For Rent</option>
+              <option value="For Buying">For Buying</option>
+              <option value="For Selling">For Selling</option>
+            </select>
+            <div class="input-group">
+              <input
+                type="text"
+                placeholder="Search for properties or keywords.."
+                class="text-x-small text-darkgrey"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass text-primary-blue search-icon"
+              ></i>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Properties sections -->
+      <section class="container-md properties">
+        <h2 class="text-xl font-w-bold">Featured Properties</h2>
+        <div class="properties-cards">
+          <div class="properties-card">
+            <img
+              class="properties-card-image"
+              src="https://dl.dropboxusercontent.com/s/iwqu75q7klfakkk/villa1.jpg?dl=0"
+            />
+            <div class="properties-card-description text-darkgrey">
+              <p class="text-md properties-card-text">
+                Villa With Pool For Sale
+              </p>
+              <p class="text-md text-primary-blue properties-card-text">
+                $225,000
+              </p>
+              <p class="text-x-small properties-card-text">
+                263 S Rexford Dr, Beverly Hills, CA 90212
+              </p>
+              <div class="text-x-small properties-card-text">
+                <img src="https://dl.dropboxusercontent.com/s/w27ftdezaj7bp55/icon1.png?dl=0" class="properties-card-icon" />
+                <span>4 Beds</span>
+                <img src="https://dl.dropboxusercontent.com/s/ovi5qfqdx5ldcge/icon2.png?dl=0" class="properties-card-icon" />
+                <span>2 Baths</span>
+                <img src="https://dl.dropboxusercontent.com/s/960b1w1irls6j7m/icon3.png?dl=0" class="properties-card-icon" />
+                <span>980 SqFT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="properties-card">
+            <img
+              class="properties-card-image"
+              src="https://dl.dropboxusercontent.com/s/35xn54zd137ddhl/villa2.jpg?dl=0"
+            />
+            <div class="properties-card-description text-darkgrey">
+              <p class="text-md properties-card-text">
+                Villa With Pool For Sale
+              </p>
+              <p class="text-md text-primary-blue properties-card-text">
+                $225,000
+              </p>
+              <p class="text-x-small properties-card-text">
+                263 S Rexford Dr, Beverly Hills, CA 90212
+              </p>
+              <div class="text-x-small properties-card-text">
+                <img src="https://dl.dropboxusercontent.com/s/w27ftdezaj7bp55/icon1.png?dl=0" class="properties-card-icon" />
+                <span>4 Beds</span>
+                <img src="https://dl.dropboxusercontent.com/s/ovi5qfqdx5ldcge/icon2.png?dl=0" class="properties-card-icon" />
+                <span>2 Baths</span>
+                <img src="https://dl.dropboxusercontent.com/s/960b1w1irls6j7m/icon3.png?dl=0" class="properties-card-icon" />
+                <span>980 SqFT</span>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <img
+              class="properties-card-image"
+              src="https://dl.dropboxusercontent.com/s/cizhsa0e61slboc/villa3.jpg?dl=0"
+            />
+            <div class="properties-card-description text-darkgrey">
+              <p class="text-md properties-card-text">
+                Villa With Pool For Sale
+              </p>
+              <p class="text-md text-primary-blue properties-card-text">
+                $225,000
+              </p>
+              <p class="text-x-small properties-card-text">
+                263 S Rexford Dr, Beverly Hills, CA 90212
+              </p>
+              <div class="text-x-small properties-card-text">
+                <img src="https://dl.dropboxusercontent.com/s/w27ftdezaj7bp55/icon1.png?dl=0" class="properties-card-icon" />
+                <span>4 Beds</span>
+                <img src="https://dl.dropboxusercontent.com/s/ovi5qfqdx5ldcge/icon2.png?dl=0" class="properties-card-icon" />
+                <span>2 Baths</span>
+                <img src="https://dl.dropboxusercontent.com/s/960b1w1irls6j7m/icon3.png?dl=0" class="properties-card-icon" />
+                <span>980 SqFT</span>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <img
+              class="properties-card-image"
+              src="https://dl.dropboxusercontent.com/s/s36jhv738wh5xyu/villa4.jpg?dl=0"
+            />
+            <div class="properties-card-description text-darkgrey">
+              <p class="text-md properties-card-text">
+                Villa With Pool For Sale
+              </p>
+              <p class="text-md text-primary-blue properties-card-text">
+                $225,000
+              </p>
+              <p class="text-x-small properties-card-text">
+                263 S Rexford Dr, Beverly Hills, CA 90212
+              </p>
+              <div class="text-x-small properties-card-text">
+                <img src="https://dl.dropboxusercontent.com/s/w27ftdezaj7bp55/icon1.png?dl=0" class="properties-card-icon" />
+                <span>4 Beds</span>
+                <img src="https://dl.dropboxusercontent.com/s/ovi5qfqdx5ldcge/icon2.png?dl=0" class="properties-card-icon" />
+                <span>2 Baths</span>
+                <img src="https://dl.dropboxusercontent.com/s/960b1w1irls6j7m/icon3.png?dl=0" class="properties-card-icon" />
+                <span>980 SqFT</span>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <img
+              class="properties-card-image"
+              src="https://dl.dropboxusercontent.com/s/m6dp41i1sryi1o5/villa5.jpg?dl=0"
+            />
+            <div class="properties-card-description text-darkgrey">
+              <p class="text-md properties-card-text">
+                Villa With Pool For Sale
+              </p>
+              <p class="text-md text-primary-blue properties-card-text">
+                $225,000
+              </p>
+              <p class="text-x-small properties-card-text">
+                263 S Rexford Dr, Beverly Hills, CA 90212
+              </p>
+              <div class="text-x-small properties-card-text">
+                <img src="https://dl.dropboxusercontent.com/s/w27ftdezaj7bp55/icon1.png?dl=0" class="properties-card-icon" />
+                <span>4 Beds</span>
+                <img src="https://dl.dropboxusercontent.com/s/ovi5qfqdx5ldcge/icon2.png?dl=0" class="properties-card-icon" />
+                <span>2 Baths</span>
+                <img src="https://dl.dropboxusercontent.com/s/960b1w1irls6j7m/icon3.png?dl=0" class="properties-card-icon" />
+                <span>980 SqFT</span>
+              </div>
+            </div>
+          </div>
+          <div class="properties-card">
+            <img
+              class="properties-card-image"
+              src="https://dl.dropboxusercontent.com/s/dw5g7m7v6szegej/villa6.jpeg?dl=0"
+            />
+            <div class="properties-card-description text-darkgrey">
+              <p class="text-md properties-card-text">
+                Villa With Pool For Sale
+              </p>
+              <p class="text-md text-primary-blue properties-card-text">
+                $225,000
+              </p>
+              <p class="text-x-small properties-card-text">
+                263 S Rexford Dr, Beverly Hills, CA 90212
+              </p>
+              <div class="text-x-small properties-card-text">
+                <img src="https://dl.dropboxusercontent.com/s/w27ftdezaj7bp55/icon1.png?dl=0" class="properties-card-icon" />
+                <span>4 Beds</span>
+                <img src="https://dl.dropboxusercontent.com/s/ovi5qfqdx5ldcge/icon2.png?dl=0" class="properties-card-icon" />
+                <span>2 Baths</span>
+                <img src="https://dl.dropboxusercontent.com/s/960b1w1irls6j7m/icon3.png?dl=0" class="properties-card-icon" />
+                <span>980 SqFT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center-container">
+          <a
+            href="javascript:void(0)"
+            class="btn-sm bg-primary-blue text-x-small text-white font-w-600 b-r-25"
+            >All Properties</a
+          >
+        </div>
+      </section>
+
+      <section class="contact container-md">
+        <div class="contact-card bg-lightgrey b-r-5">
+          <h2
+            class="text-primary-blue text-2x-large font-w-bold contact-card-heading"
+          >
+            Aktas Properties Information
+          </h2>
+          <p class="text-md text-darkgrey contact-card-text">
+            1234 Hacker St, San Francisco
+          </p>
+          <p class="text-md text-darkgrey contact-card-text">(123) 456-7890</p>
+          <p class="text-md text-darkgrey contact-card-text">
+            Mon — Sun: 8:00am - 6:00pm
+          </p>
+        </div>
+        <div class="contact-card bg-primary-blue b-r-5">
+          <h2 class="text-white text-2x-large font-w-bold contact-card-heading">
+            Aktas Properties Information
+          </h2>
+          <p class="text-sm text-white contact-card-text">
+            Let us create a tailored strategic marketing plan and keep track of
+            the selling process.
+          </p>
+          <a
+            href="javascript:void(0)"
+            class="btn-sm bg-lightgreen text-x-small text-white font-w-600 b-r-25 contact-card-btn"
+            >Contact Us</a
+          >
+        </div>
+      </section>
+
+      <section class="sales">
+        <div class="container-md">
+          <div class="sales-card bg-white">
+            <div class="sales-card-description text-darkgrey">
+              <p class="bg-orange text-white sales-badge">For Sale</p>
+              <p class="text-x-large text-black sales-card-text">
+                Villa With Pool For Sale
+              </p>
+              <p class="text-large text-primary-blue sales-card-text">
+                $225,000
+              </p>
+              <p class="text-medium sales-card-text">
+                263 S Rexford Dr, Beverly Hills, CA 90212
+              </p>
+              <div class="text-x-small sales-card-text">
+                <div>
+                  <img src="https://dl.dropboxusercontent.com/s/w27ftdezaj7bp55/icon1.png?dl=0" class="sales-card-icon" />
+                  <span>4 Beds</span>
+                </div>
+                <div>
+                  <img src="https://dl.dropboxusercontent.com/s/ovi5qfqdx5ldcge/icon2.png?dl=0" class="sales-card-icon" />
+                  <span>2 Baths</span>
+                </div>
+                <div>
+                  <img src="https://dl.dropboxusercontent.com/s/960b1w1irls6j7m/icon3.png?dl=0" class="sales-card-icon" />
+                  <span>980 SqFT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sales-card-footer bg-white">
+            <div class="sales-card-user">
+              <img src="https://dl.dropboxusercontent.com/s/8l1g2s0cepj1j4y/salesProfile.jpg?dl=0" class="sales-card-user-image" />
+              <div>
+                <p class="text-medium text-darkgrey">Opi Watihana</p>
+                <p class="text-x-small text-darkgrey">Sales Manager</p>
+              </div>
+            </div>
+            <a
+              href="javascript:void(0)"
+              class="btn-sm bg-primary-blue b-r-25 text-white text-small"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="text-black text-x-large font-w-bold text-center">
+          What Our Clients Say
+        </h2>
+
+        <div class="reviews-card-wrapper container-md">
+          <div class="reviews-card bg-lightgrey text-center">
+            <img src="https://dl.dropboxusercontent.com/s/fjeirzrewcsahk8/user1.jpg?dl=0" class="reviews-card-image" />
+            <h3 class="text-large text-darkgrey font-w-bold reviews-card-user">
+              Bansilal Brata
+            </h3>
+            <p class="text-medium text-darkgrey reviews-card-text">
+              Have you ever heard the expression, “Do not count your chickens
+              before they hatch?” Maybe an older, wiser individual would tell
+              you this to keep you from getting ahead of yourself. Like buying a
+              new car before you actually got that new job. Well, when setting
+              and obtaining your goals, you need to “Count your chicken before
+              they hatch” in your mind. What I mean by this is you have to start
+              seeing yourself completing or obtaining your goal. What you
+              profess, you possess! The first thing you need to do is sit down
+              and set your goals. Diana Scharf Hunt said “Goals are dreams with
+              deadlines.” A lot of times, people are thrown off by the idea of
+              taking the time to set their goals. But when you take a trip
+            </p>
+          </div>
+          <div class="reviews-card bg-white text-center">
+            <img src="https://dl.dropboxusercontent.com/s/wkccv9q3j04zs05/user2.jpg?dl=0" class="reviews-card-image" />
+            <h3 class="text-large text-darkgrey font-w-bold reviews-card-user">
+              Oluchi Mazi
+            </h3>
+            <p class="text-medium text-darkgrey reviews-card-text">
+              The popularity of breakfast foods is a good reason to keep
+              dependable starters, such as eggs, bread and other staples, on
+              hand. But why reserve them only for morning meals? Planning
+              breakfast for dinner is a good way to serve up simple, satisfying
+              evening meals without spending a lot of time in the kitchen.
+            </p>
+          </div>
+          <div class="reviews-card bg-lightgrey text-center">
+            <img src="https://dl.dropboxusercontent.com/s/iif84r7byhl6t2a/user3.jpg?dl=0" class="reviews-card-image" />
+            <h3 class="text-large text-darkgrey font-w-bold reviews-card-user">
+              Fariba Mirzaii
+            </h3>
+            <p class="text-medium text-darkgrey reviews-card-text">
+              If there is one thing kids love more than eating pizza, it’s being
+              able to make it themselves using all their favorite toppings.
+              Creating a “make it yourself” pizza party is a great way to
+              customize the meal while involving friends and family in a fun
+              activity.
+            </p>
+          </div>
+          <div class="reviews-card bg-lightgrey text-center">
+            <img src="https://dl.dropboxusercontent.com/s/fjeirzrewcsahk8/user1.jpg?dl=0" class="reviews-card-image" />
+            <h3 class="text-large text-darkgrey font-w-bold reviews-card-user">
+              Bansilal Brata
+            </h3>
+            <p class="text-medium text-darkgrey reviews-card-text">
+              Have you ever heard the expression, “Do not count your chickens
+              before they hatch?” Maybe an older, wiser individual would tell
+              you this to keep you from getting ahead of yourself. Like buying a
+              new car before you actually got that new job. Well, when setting
+              and obtaining your goals, you need to “Count your chicken before
+              they hatch” in your mind. What I mean by this is you have to start
+              seeing yourself completing or obtaining your goal. What you
+              profess, you possess! The first thing you need to do is sit down
+              and set your goals. Diana Scharf Hunt said “Goals are dreams with
+              deadlines.” A lot of times, people are thrown off by the idea of
+              taking the time to set their goals. But when you take a trip
+            </p>
+          </div>
+          <div class="reviews-card bg-white text-center">
+            <img src="https://dl.dropboxusercontent.com/s/wkccv9q3j04zs05/user2.jpg?dl=0" class="reviews-card-image" />
+            <h3 class="text-large text-darkgrey font-w-bold reviews-card-user">
+              Oluchi Mazi
+            </h3>
+            <p class="text-medium text-darkgrey reviews-card-text">
+              The popularity of breakfast foods is a good reason to keep
+              dependable starters, such as eggs, bread and other staples, on
+              hand. But why reserve them only for morning meals? Planning
+              breakfast for dinner is a good way to serve up simple, satisfying
+              evening meals without spending a lot of time in the kitchen.
+            </p>
+          </div>
+          <div class="reviews-card bg-lightgrey text-center">
+            <img src="https://dl.dropboxusercontent.com/s/iif84r7byhl6t2a/user3.jpg?dl=0" class="reviews-card-image" />
+            <h3 class="text-large text-darkgrey font-w-bold reviews-card-user">
+              Fariba Mirzaii
+            </h3>
+            <p class="text-medium text-darkgrey reviews-card-text">
+              If there is one thing kids love more than eating pizza, it’s being
+              able to make it themselves using all their favorite toppings.
+              Creating a “make it yourself” pizza party is a great way to
+              customize the meal while involving friends and family in a fun
+              activity.
+            </p>
+          </div>
+        </div>
+        <div class="container-lg sliderBtn">
+          <i
+            class="fa-solid fa-arrow-left text-primary-blue text-medium"
+            onclick="prev();"
+          ></i>
+          <i
+            class="fa-solid fa-arrow-right text-primary-blue text-medium"
+            onclick="next();"
+          ></i>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-lightgrey footer text-center">
+      <a href="javascript:void(0)">
+        <img src="https://dl.dropboxusercontent.com/s/nkjddg5x0g58iwg/logo-copy.png?dl=0" />
+      </a>
+      <p class="text-darkgrey text-x-small footer-text">
+        Have you ever heard the expression, “Do not count your chickens before
+        they hatch?” Maybe an older, wiser individual would tell you this to
+        keep you from getting ahead of yourself.
+       </p>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>

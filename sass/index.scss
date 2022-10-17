@@ -1,0 +1,16 @@
+@use "./core/reset";
+@use "./components/containers";
+@use "./components/colors";
+@use "./components/fonts";
+@use "./layout/header";
+@use "./sections/banner";
+@use "./sections/properties";
+@use "./components/buttons";
+@use "./components/borders";
+@use "./sections/contact";
+@use "./sections/sale";
+@use "./sections/reviews";
+@use "./layout/footer";
+
+
+@use "./media/media-mobile";

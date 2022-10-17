@@ -1,0 +1,43 @@
+$OpenSans: "Open Sans", sans-serif;
+$textColors: (
+  "white": #fff,
+  "black": #000,
+  "darkgrey": #454545,
+  "primary-blue": #004dff,
+);
+$bgColors: (
+  "white": #fff,
+  "black": #000,
+  "primary-blue": #004dff,
+  "lightgreen": #1dc679,
+  "orange": #ff9f00,
+  "lightgrey": rgb(245, 244, 244),
+);
+$textSizes: (
+  "x-small": 14px,
+  "small": 16px,
+  "medium": 18px,
+  "large": 24px,
+  "x-large": 32px,
+  "2x-large": 44px,
+);
+$mobileTextSizes: (
+  "x-small": 13px,
+  "small": 15px,
+  "medium": 16px,
+  "large": 21px,
+  "x-large": 25px,
+  "2x-large": 34px,
+);
+
+$buttons:("sm":15px 25px);
+$buttonsMobile:("sm":8px 15px);
+
+$borderRadius: ("5":5px,"10":10px,"15":15px,"25":25px,"half":50%);
+
+$fontWeights: bold,600;
+
+$mobileWidth:700px;
+$tabletWidth:850px;
+$desktopWidth:1100px;
+$marginTopForSale:(1:27px,2:9px,3:9px,4:25px);

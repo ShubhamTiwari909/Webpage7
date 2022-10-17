@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+
+@each $suffix,$radius in $borderRadius {
+    .b-r-#{$suffix}{
+        border-radius:$radius;
+    }
+}

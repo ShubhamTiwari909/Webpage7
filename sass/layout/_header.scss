@@ -1,0 +1,51 @@
+.header {
+  position: fixed;
+  top: 40px;
+  width:100%;
+  z-index: 30;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+
+  &-icons{
+    display: flex;
+    gap: 25px;
+  }
+}
+.logo {
+  width: 160px;
+  height: 40px;
+}
+.hamburger{
+  background:transparent;
+  border:none;
+  outline: none;
+  font-size: 25px;
+  color: #fff;
+  display:none;
+}
+
+.dropdown{
+  display: flex;
+}
+.header-full{
+  height:100vh;
+  background-color:#fff;
+  top: 0;
+  padding:20px 0 0 0;
+}

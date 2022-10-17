@@ -1,0 +1,21 @@
+%containers {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.container-lg,.container-md{
+    @extend %containers;
+}
+.container-lg{
+    max-width: 1200px;
+}
+.center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:30px;
+}
