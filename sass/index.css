@@ -502,7 +502,8 @@ a {
   }
   .properties-card-image,
 .sales-card-image {
-    max-width: 300px;
+    max-width: 350px;
+    width: 350px;
   }
   .properties-card-text,
 .sales-card-text {
