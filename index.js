@@ -89,7 +89,7 @@ const prev = () => {
             reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
         }
         if (window.innerWidth >= 850) {
-            reviewCard[i].style.left = `280px`;
+            reviewCard[i].style.left = `370px`;
         }
     }
 }
@@ -111,7 +111,7 @@ const next = () => {
             reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
         }
         if (window.innerWidth >= 850) {
-            reviewCard[i].style.left = `280px`;
+            reviewCard[i].style.left = `370px`;
         }
     }
 
@@ -129,7 +129,6 @@ const defaultStyling = () => {
             reviewCard[i].style.backgroundColor = "rgb(245, 244, 244)";
             reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
         }
-        reviewCard[i].style.left = `0`;
         reviewCard[i].style.position = `relative`;
     }
 }

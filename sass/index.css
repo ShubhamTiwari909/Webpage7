@@ -365,12 +365,14 @@ a {
   overflow: hidden;
 }
 .reviews-card {
-  max-width: 450px;
-  min-width: 450px;
+  max-width: 400px;
+  min-width: 400px;
   max-height: 550px;
   height: 550px;
   padding: 50px;
   transition: all 0.2s linear;
+  gap: 60px;
+  overflow: auto;
   /* Track */
   /* Handle */
 }
@@ -531,7 +533,7 @@ a {
     padding: 30px 25px 45px 20px;
   }
   .reviews-card {
-    min-width: 280px;
+    min-width: 300px;
     padding: 30px 20px;
     height: 350px;
     transition: all 0.2s linear;
