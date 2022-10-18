@@ -37,7 +37,7 @@ const dropdownNavigation = () => {
             navbarLinks[i].style.fontSize = "20px";
             navbarLinks[i].style.fontWeight = "bold";
         }
-        
+
         closeNavbar();
         scrolledNavigation()
 
@@ -79,6 +79,7 @@ const prev = () => {
         counter--;
     }
     for (let i = 0; i < reviewCard.length; i++) {
+        reviewCard[i].style.zIndex = `0`;
         if (counter === i) {
             reviewCard[i].style.backgroundColor = "white";
             reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(1.1)`;
@@ -86,6 +87,9 @@ const prev = () => {
         else {
             reviewCard[i].style.backgroundColor = "rgb(245, 244, 244)";
             reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
+        }
+        if (window.innerWidth >= 850) {
+            reviewCard[i].style.left = `280px`;
         }
     }
 }
@@ -106,6 +110,9 @@ const next = () => {
             reviewCard[i].style.backgroundColor = "rgb(245, 244, 244)";
             reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
         }
+        if (window.innerWidth >= 850) {
+            reviewCard[i].style.left = `280px`;
+        }
     }
 
 }
@@ -115,14 +122,15 @@ const defaultStyling = () => {
     for (let i = 0; i < reviewCard.length; i++) {
         if (i === 0) {
             reviewCard[i].style.backgroundColor = "white";
-            reviewCard[i].style.transform = `scale(1.1)`;
+            reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(1.1)`;
             reviewCard[i].style.zIndex = `0`;
         }
         else {
             reviewCard[i].style.backgroundColor = "rgb(245, 244, 244)";
-            reviewCard[i].style.transform = `scale(0.9)`;
-
+            reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
         }
+        reviewCard[i].style.left = `0`;
+        reviewCard[i].style.position = `relative`;
     }
 }
 
@@ -149,7 +157,7 @@ const changingMediaQuery = () => {
 }
 
 
-window.addEventListener('resize', changingMediaQuery);
+window.addEventListener('resize', changingMediaQuery, prev, next);
 
 
 
