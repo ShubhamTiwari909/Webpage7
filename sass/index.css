@@ -531,8 +531,7 @@ a {
     padding: 30px 25px 45px 20px;
   }
   .reviews-card {
-    height: 300px;
-    min-width: 320px;
+    min-width: 100%;
     padding: 30px 20px;
     height: 350px;
     transition: all 0.2s linear;
