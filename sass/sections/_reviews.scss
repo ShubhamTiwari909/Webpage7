@@ -12,15 +12,20 @@
     max-width: 400px;
     min-width: 400px;
     max-height: 550px;
-    height:550px;
+    height: 550px;
     padding: 50px;
     transition: all 0.2s linear;
     gap: 60px;
-    overflow:auto;
-
 
     &-text {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+      white-space: normal;
       margin-top: 45px;
+      
     }
     &-image {
       max-width: 100px;
@@ -30,22 +35,6 @@
       border-radius: 32px;
       object-fit: cover;
     }
-
-     // width
-     &::-webkit-scrollbar {
-      width: 4px;
-    }
-
-    /* Track */
-    &::-webkit-scrollbar-track {
-      border-radius: 10px;
-    }
-
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-      background: #cfcfcf;
-      border-radius: 20px;
-    }
   }
 }
 
@@ -54,4 +43,3 @@
   justify-content: space-between;
   transform: translateY(-300px);
 }
-

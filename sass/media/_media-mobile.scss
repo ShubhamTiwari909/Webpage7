@@ -27,7 +27,7 @@
   .reviews {
     &-card {
       min-width: 330px;
-     
+
       &-text {
         font-size: 14px;
       }
@@ -76,9 +76,9 @@
       &-description {
         padding: 10px 10px 15px 15px;
       }
-      &-image{
-        max-width:350px;
-        width:350px
+      &-image {
+        max-width: 350px;
+        width: 350px;
       }
       &-text {
         gap: 25px;
@@ -115,18 +115,26 @@
 
   .reviews {
     &-card {
+      height: 300px;
       min-width: 300px;
       padding: 30px 20px;
-      height:350px;
+      height: 350px;
       transition: all 0.2s linear;
 
       &-text {
         font-size: 14px;
+        -webkit-line-clamp: 6;
       }
       &-image {
         max-width: 70px;
         max-height: 70px;
       }
     }
+  }
+
+  .sliderBtn {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-200px);
   }
 }

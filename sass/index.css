@@ -32,6 +32,11 @@ a {
   max-width: 1200px;
 }
 
+.container-full {
+  max-width: 100%;
+  margin: 0 30px;
+}
+
 .center-container {
   display: flex;
   justify-content: center;
@@ -372,11 +377,14 @@ a {
   padding: 50px;
   transition: all 0.2s linear;
   gap: 60px;
-  overflow: auto;
-  /* Track */
-  /* Handle */
 }
 .reviews-card-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  white-space: normal;
   margin-top: 45px;
 }
 .reviews-card-image {
@@ -387,16 +395,6 @@ a {
   border-radius: 32px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.reviews-card::-webkit-scrollbar {
-  width: 4px;
-}
-.reviews-card::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-.reviews-card::-webkit-scrollbar-thumb {
-  background: #cfcfcf;
-  border-radius: 20px;
 }
 
 .sliderBtn {
@@ -533,6 +531,7 @@ a {
     padding: 30px 25px 45px 20px;
   }
   .reviews-card {
+    height: 300px;
     min-width: 300px;
     padding: 30px 20px;
     height: 350px;
@@ -540,9 +539,15 @@ a {
   }
   .reviews-card-text {
     font-size: 14px;
+    -webkit-line-clamp: 6;
   }
   .reviews-card-image {
     max-width: 70px;
     max-height: 70px;
+  }
+  .sliderBtn {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-200px);
   }
 }/*# sourceMappingURL=index.css.map */
