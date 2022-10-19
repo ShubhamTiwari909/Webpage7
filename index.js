@@ -1,5 +1,5 @@
 const header = document.getElementById("header");
-const reviewCard = document.querySelectorAll(".reviews-card");
+const reviewCard = document.getElementsByClassName("reviews-card");
 const navbar = document.getElementById("navbar");
 const navbarIcons = document.getElementById("navbar-icons");
 const navbarLinks = document.querySelectorAll(".navbar-link");
@@ -24,20 +24,14 @@ const closeNavbar = () => {
     header.classList.remove("header-full");
     logo.src = "https://dl.dropboxusercontent.com/s/wo8c597x590k852/logo.png?dl=0";
     bodyElement.style.overflowY = "auto";
-    for (let i = 0; i < navbarIcons.childElementCount; i++) {
-        navbarIcons.children[i].style.color = "white"
-    }
+    Array.from(navbarIcons.children).forEach(element => {
+        element.style.color = "white"
+    });
 }
 
 const dropdownNavigation = () => {
     if (navbar.classList.contains("dropdown") && navbarIcons.classList.contains("dropdown")) {
         header.style.backgroundColor = "transparent";
-        for (let i = 0; i < navbarLinks.length; i++) {
-            navbarLinks[i].style.color = "black";
-            navbarLinks[i].style.fontSize = "20px";
-            navbarLinks[i].style.fontWeight = "bold";
-        }
-
         closeNavbar();
         scrolledNavigation()
 
@@ -54,14 +48,14 @@ const dropdownNavigation = () => {
         hamburgerIcon.classList.add("fa-x");
         hamburgerIcon.classList.remove("fa-bars");
         logo.src = "https://dl.dropboxusercontent.com/s/nkjddg5x0g58iwg/logo-copy.png?dl=0";
-        for (let i = 0; i < navbarLinks.length; i++) {
-            navbarLinks[i].style.color = "black";
-            navbarLinks[i].style.fontSize = "20px";
-            navbarLinks[i].style.fontWeight = "bold";
-        }
-        for (let i = 0; i < navbarIcons.childElementCount; i++) {
-            navbarIcons.children[i].style.color = "black"
-        }
+        navbarLinks.forEach(element => {
+            element.style.color = "black";
+            element.style.fontSize = "20px";
+            element.style.fontWeight = "bold";
+        });
+        Array.from(navbarIcons.children).forEach(element => {
+            element.style.color = "white"
+        });
         bodyElement.style.height = "100%";
         bodyElement.style.overflowY = "hidden";
     }
@@ -69,6 +63,25 @@ const dropdownNavigation = () => {
 }
 
 
+
+
+const slider = () => {
+    Array.from(reviewCard).forEach((element, i) => {
+        element.style.ZIndex = "0";
+        if (counter === i) {
+            element.style.backgroundColor = "white";
+            element.style.transform = `translateX(-${counter * 100}%) scale(1.1)`;
+        }
+        else {
+            element.style.backgroundColor = "rgb(245,244,244)";
+            element.style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
+        }
+
+        if (window.innerWidth >= 850) {
+            element.style.left = `370px`;
+        }
+    })
+}
 
 const prev = () => {
 
@@ -78,20 +91,7 @@ const prev = () => {
     else {
         counter--;
     }
-    for (let i = 0; i < reviewCard.length; i++) {
-        reviewCard[i].style.zIndex = `0`;
-        if (counter === i) {
-            reviewCard[i].style.backgroundColor = "white";
-            reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(1.1)`;
-        }
-        else {
-            reviewCard[i].style.backgroundColor = "rgb(245, 244, 244)";
-            reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
-        }
-        if (window.innerWidth >= 850) {
-            reviewCard[i].style.left = `370px`;
-        }
-    }
+    slider();
 }
 const next = () => {
     if (counter >= reviewCard.length - 1) {
@@ -100,37 +100,24 @@ const next = () => {
     else {
         counter++;
     }
-    for (let i = 0; i < reviewCard.length; i++) {
-        reviewCard[i].style.zIndex = `0`;
-        if (counter === i) {
-            reviewCard[i].style.backgroundColor = "white";
-            reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(1.1)`;
-        }
-        else {
-            reviewCard[i].style.backgroundColor = "rgb(245, 244, 244)";
-            reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
-        }
-        if (window.innerWidth >= 850) {
-            reviewCard[i].style.left = `370px`;
-        }
-    }
-
+    slider();
 }
 
 
 const defaultStyling = () => {
-    for (let i = 0; i < reviewCard.length; i++) {
-        if (i === 0) {
-            reviewCard[i].style.backgroundColor = "white";
-            reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(1.1)`;
-            reviewCard[i].style.zIndex = `0`;
+    Array.from(reviewCard).forEach((element,i) => {
+        if(i === 0){
+            element.style.backgroundColor = "white";
+            element.style.transform = `translateX(-${counter * 100}%) scale(1.1)`;
+            element.style.zIndex = "0";
         }
-        else {
-            reviewCard[i].style.backgroundColor = "rgb(245, 244, 244)";
-            reviewCard[i].style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
+        else{
+            element.style.backgroundColor = "rgb(245,244,244)"; 
+            element.style.transform = `translateX(-${counter * 100}%) scale(0.9)`;
         }
-        reviewCard[i].style.position = `relative`;
-    }
+
+        element.style.position = `relative`;
+    })
 }
 
 

@@ -1,0 +1,5 @@
+@mixin borderRadius($radius:10px,$suffix) {
+    .b-r-#{$suffix} {
+        border-radius:$radius;
+    }
+}
